@@ -272,3 +272,4 @@ if v:version >= 703
 endif
 set hidden
 set autowrite
+set iskeyword-=_
