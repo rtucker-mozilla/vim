@@ -77,7 +77,7 @@ nmap <silent><Leader>te <Esc>:Pytest error<CR>
 " Run django tests
 map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
 map <leader>ds :set makeprg=python\ manage.py\ test\ systems\|:call MakeGreen()<CR>
-
+map <leader>m :tabfirst<CR>
 " ,v brings up my .vimrc
 " ,V reloads it -- making all changes active (have to save first)
 map <leader>v :sp ~/.vimrc<CR><C-W>_
@@ -106,6 +106,7 @@ imap <C-W> <C-O><C-W>
 
 " Open NerdTree
 map <leader>t :NERDTreeToggle<CR>
+" map <Leader>t :TMiniBufExplorer<cr>
 
 " Run command-t file search
 " map <leader>f :CommandT<CR>
@@ -273,3 +274,7 @@ endif
 set hidden
 set autowrite
 set iskeyword-=_
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1 
